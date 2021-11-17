@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheButton", "TheButton\TheButton.csproj", "{17CAEDB6-E084-406E-BE38-5DF23250EE6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17CAEDB6-E084-406E-BE38-5DF23250EE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CAEDB6-E084-406E-BE38-5DF23250EE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CAEDB6-E084-406E-BE38-5DF23250EE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CAEDB6-E084-406E-BE38-5DF23250EE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E9728FB-EB0A-43C6-8A66-D198253A93FF}
+	EndGlobalSection
+EndGlobal

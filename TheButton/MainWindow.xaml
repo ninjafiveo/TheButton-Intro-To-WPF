@@ -1,0 +1,34 @@
+﻿<Window x:Class="TheButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheButton"
+        mc:Ignorable="d"
+        Title="The Button" Height="500" Width="500">
+    <Grid Margin="25,25,25,25">
+        <Button x:Name="Green_Click_Me" Height="100" Width="250" Foreground="White" Background="ForestGreen" Content="Click Me!" BorderBrush="Red" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Opacity="1" Click="Green_Click_Me_Click" />
+        <Button x:Name="Crooked_Clicker" HorizontalAlignment="Center" Foreground="BlueViolet" Background="Aquamarine" Content="Crooked Clicker" Margin="151,132,139,0" VerticalAlignment="Top" Width="152" Height="55" RenderTransformOrigin="0.5,0.5" Click="Crooked_Clicker_Button_Click" BorderBrush="Beige">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-17.143"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Enter Number 1: " HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="Number1_Input" HorizontalAlignment="Left" Height="23" Margin="128,276,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Enter Number 2: " HorizontalAlignment="Left" Margin="10,303,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="Number2_Input" HorizontalAlignment="Left" Height="23" Margin="128,303,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Answer = " HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="ResponseAnswer" HorizontalAlignment="Left" Margin="128,339,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Calculate_Button" Content="Calculate" HorizontalAlignment="Left" Margin="25,375,0,0" VerticalAlignment="Top" Width="75" Height="50" Click="Calculate_Button_Click"/>
+
+
+
+
+    </Grid>
+</Window>
