@@ -47,5 +47,42 @@ namespace TheButton
 
             ResponseAnswer.Text = answer.ToString();
         }
+
+        private void Number1_Input_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Double.TryParse(Number1_Input.Text, out number1);
+            Double.TryParse(Number2_Input.Text, out number2);
+            double answer = number1 + number2;
+
+            ResponseAnswer.Text = answer.ToString();
+        }
+
+        private void Number2_Input_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Double.TryParse(Number1_Input.Text, out number1);
+            Double.TryParse(Number2_Input.Text, out number2);
+            double answer = number1 + number2;
+
+            ResponseAnswer.Text = answer.ToString();
+        }
+
+
+
+        private void Clear_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Number1_Input.Text = "0";
+            Number2_Input.Text = "0";
+            ResponseAnswer.Text = (0).ToString();
+
+        }
+
+        private void Number1_Input_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Double.TryParse(Number1_Input.Text, out number1);
+            Double.TryParse(Number2_Input.Text, out number2);
+            double answer = number1 + number2;
+
+            ResponseAnswer.Text = answer.ToString();
+        }
     }
 }

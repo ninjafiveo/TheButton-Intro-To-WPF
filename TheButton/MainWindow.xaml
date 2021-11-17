@@ -19,13 +19,14 @@
             </Button.RenderTransform>
         </Button>
         <Label Content="Enter Number 1: " HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="Number1_Input" HorizontalAlignment="Left" Height="23" Margin="128,276,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Number1_Input" HorizontalAlignment="Left" Height="23" Margin="128,276,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" GotFocus="Number1_Input_GotFocus" LostFocus="Number1_Input_LostFocus"/>
 
         <Label Content="Enter Number 2: " HorizontalAlignment="Left" Margin="10,303,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="Number2_Input" HorizontalAlignment="Left" Height="23" Margin="128,303,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Number2_Input" HorizontalAlignment="Left" Height="23" Margin="128,303,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" LostFocus="Number2_Input_LostFocus"/>
         <Label Content="Answer = " HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="ResponseAnswer" HorizontalAlignment="Left" Margin="128,339,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="Calculate_Button" Content="Calculate" HorizontalAlignment="Left" Margin="25,375,0,0" VerticalAlignment="Top" Width="75" Height="50" Click="Calculate_Button_Click"/>
+        <Button x:Name="Clear_Button" Content="Clear" HorizontalAlignment="Left" Margin="195,393,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Button_Click"/>
 
 
 
